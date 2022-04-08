@@ -1,0 +1,35 @@
+.prodholder
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    max-height: 75vh;
+    overflow-y: scroll;
+}
+.prod
+{
+    min-height:200px;
+    margin: 2px 2%;
+    background-color: brown;
+    padding: 2px 5%;
+}
+.imgholder
+{
+    text-align: center;
+}
+.dataholder
+{
+    display: flex;
+    justify-content: center;
+    /* min-height: 10px; */
+    /* margin: auto auto; */
+}
+.imgholder
+{
+    /* min-width: 15%; */
+    min-height: 125px;
+}
+.data_element
+{
+    height: 10px;
+}

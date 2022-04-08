@@ -1,0 +1,11 @@
+.catHolder
+{
+    display: flex;
+    overflow-x: scroll;
+}
+.cat
+{
+    min-width:20%;
+    min-height:20px;
+    margin:5% 0%;
+}
