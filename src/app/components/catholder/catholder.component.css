@@ -2,7 +2,14 @@
 {
     display: flex;
     overflow-x: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    
 }
+.catHolder::-webkit-scrollbar {
+    display: none;
+  }
+  
 .cat
 {
     min-width:20%;
