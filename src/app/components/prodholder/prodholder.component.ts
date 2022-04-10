@@ -9,7 +9,7 @@ import { ProductService } from 'src/app/product.service';
 })
 export class ProdholderComponent implements OnInit {
   // prods=["alpha","beta","Cadburry","Donout","Eclair","Frozon Yougurt","GingerBread","HoneyCoumb","Ice Cream Sandwitch","JellyBean","KitKat","Lollypop","Marshmellow","Nougouht","Oreo"];
-  prods:Observable<Object>[];
+  prods:Observable<Object[]>;
   plantsService;
   constructor(plantsService:ProductService) {
     this.plantsService=plantsService;
@@ -19,6 +19,7 @@ export class ProdholderComponent implements OnInit {
     try
     {
     this.prods=this.plantsService.getPlants();
+    console.log(typeof(this.prods));
     console.log("Logging Plants:");
     console.log(this.prods);
     }
