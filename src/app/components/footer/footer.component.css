@@ -5,3 +5,19 @@
     justify-content: space-between;
     margin: 2% 0%;
 }
+.app-footer-menu
+{
+    display: none;
+}
+@media screen and (orientation: portrait) {
+.footer
+{
+    display: none;
+}
+
+.app-footer-menu
+{
+    display: flex;
+}
+
+}

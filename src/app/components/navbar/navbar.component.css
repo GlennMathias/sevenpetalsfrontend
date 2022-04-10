@@ -1,5 +1,19 @@
 .navbar
 {
     width:100%;
+    margin: 5px;
+    background-color: rgb(212, 248, 203);
+}
+
+.topLine
+{
     display: flex;
+    justify-content: space-between;
+
+}
+
+.bottomLine
+{
+    display:flex;
+    justify-content: center;
 }

@@ -1,9 +1,13 @@
 <div class="prodholder">
-    <div *ngFor="let prod of prods;" class="prod" >
-        <div class="imgholder"><img src="" alt="{{prod}}"></div>
+    <div *ngFor="let prod of prods | async" class="prod" >
+        <div class="imgholder"><img src="{{prod.imgLoc}}" alt="{{prod.name}}"></div>
         <div class="dataholder"> 
-            <div class="title data_element">{{prod}}</div> 
+            <div class="title">{{prod.name}}</div>  
         </div>
-        <div class="addCart"><button><h1>+</h1></button></div>
+        <div class="dataholder">
+             <div class="price ">{{prod.price}} Rs.</div>
+            <div class="addToCart"><button>+</button></div>
+        </div>
+        
     </div>
 </div>

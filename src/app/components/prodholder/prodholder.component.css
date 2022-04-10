@@ -4,17 +4,7 @@
     grid-template-columns: auto auto auto auto;
     width: 100%;
     max-height: 75vh;
-    overflow-y:scroll;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-}
-
-.prodholder
-{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    width: 100%;
-    max-height: 75vh;
+    background-color: transparent;
     overflow-y:scroll;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
@@ -23,30 +13,57 @@
 .prodHolder::-webkit-scrollbar {
     display: none;
   }
+
 .prod
 {
     min-height:200px;
-    margin: 2px 2%;
-    background-color: brown;
-    padding: 2px 5%;
+    width:150px;
+    margin:10px auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10%;
+    /* padding: 0px 10px; */
 }
+
 .imgholder
 {
+    padding: 10px 5%;
+    height:125px;
     text-align: center;
 }
+.imgholder img
+{
+    width:80%;
+    height:200px;
+}
+
 .dataholder
 {
     display: flex;
-    justify-content: center;
-    /* min-height: 10px; */
-    /* margin: auto auto; */
+    justify-content: space-evenly;
+    height:30px;
 }
-.imgholder
+.dataholder.price
 {
-    /* min-width: 15%; */
-    min-height: 125px;
+    width:20%;
 }
-.data_element
+
+.dataholder.addToCart
 {
-    height: 10px;
+    width:80%;
+    margin:auto;
+}
+.addToCart button
+{
+    height: 20px;
+}
+
+@media only screen and (orientation: portrait) {
+    .prodholder
+    {
+        grid-template-columns: auto auto ;
+    }
+    .prod
+    {
+        width:150px;
+    }
 }
