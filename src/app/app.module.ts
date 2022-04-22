@@ -16,6 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProductsComponent } from './pages/products/products.component';
 import { CatholderComponent } from './components/catholder/catholder.component';
 import { ProdholderComponent } from './components/prodholder/prodholder.component';
+import { LoginComponent } from './pages/login/login.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { ProdholderComponent } from './components/prodholder/prodholder.componen
     FooterComponent,
     ProductsComponent,
     CatholderComponent,
-    ProdholderComponent
+    ProdholderComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

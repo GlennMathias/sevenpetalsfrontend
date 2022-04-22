@@ -4,11 +4,22 @@
     display: flex;
     justify-content: space-between;
     margin: 2% 0%;
+    height:10vh;
 }
 .app-footer-menu
 {
     display: none;
 }
+.menu-item
+{
+    text-align: center;
+}
+ .menu-item img
+{
+    width:25%; 
+    /* height:10vh; */
+}
+
 @media screen and (orientation: portrait) {
 .footer
 {
@@ -18,6 +29,11 @@
 .app-footer-menu
 {
     display: flex;
+    justify-content: space-evenly;
+    height:9vh;
 }
-
+.app-footer-menu a
+{
+    padding-top: 4vh;
+}
 }

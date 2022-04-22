@@ -1,7 +1,13 @@
+#logo
+{
+    width: 2em;
+}
+
 .navbar
 {
     width:100%;
     margin: 5px;
+    height:10vh;
     background-color: rgb(212, 248, 203);
 }
 

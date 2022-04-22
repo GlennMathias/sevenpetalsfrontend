@@ -3,8 +3,8 @@
     display: grid;
     grid-template-columns: auto auto auto auto;
     width: 100%;
-    max-height: 75vh;
-    background-color: transparent;
+    height: 65vh;
+    /* background-color: transparent; */
     overflow-y:scroll;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
@@ -20,9 +20,12 @@
     width:150px;
     margin:10px auto;
     background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.35) 1.95px 5px 15px;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
     border-radius: 10%;
     /* padding: 0px 10px; */
 }
+
 
 .imgholder
 {
@@ -32,8 +35,8 @@
 }
 .imgholder img
 {
-    width:80%;
-    height:200px;
+    width:90%;
+    height:125px;
 }
 
 .dataholder

@@ -1,4 +1,5 @@
-.holder
+.content-holder
 {
-    height:80vh;
+    height:78vh;
+    overflow: scroll;
 }
